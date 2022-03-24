@@ -5,7 +5,7 @@ import PayModal from '../components/PayModal';
 import PostCard from '../components/PostCard';
 import { useStore } from '../store/Provider';
 
-const PostList: React.FC = () => {
+function PostList () {
   const store = useStore();
 
   if (store.posts.length === 0) {

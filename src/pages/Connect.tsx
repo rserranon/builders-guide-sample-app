@@ -3,7 +3,7 @@ import { Button, Card, Col, Form, Row } from 'react-bootstrap';
 import { observer } from 'mobx-react-lite';
 import { useStore } from '../store/Provider';
 
-const Connect: React.FC = () => {
+function Connect  () {
   const store = useStore();
 
   const [host, setHost] = useState('127.0.0.1:10005');

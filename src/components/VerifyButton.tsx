@@ -7,7 +7,7 @@ interface Props {
   post: Post;
 }
 
-const VerifyButton: React.FC<Props> = ({ post }) => {
+function VerifyButton ({ post } : {post : Post}) {
   const store = useStore();
 
   const handleVerify = useCallback(() => {

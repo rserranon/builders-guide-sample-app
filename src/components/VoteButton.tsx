@@ -7,7 +7,7 @@ interface Props {
   post: Post;
 }
 
-const VoteButton: React.FC<Props> = ({ post }) => {
+function VoteButton ({ post } : {post: Post}) {
   const store = useStore();
 
   // create an invoice and show the modal when the button is clicked

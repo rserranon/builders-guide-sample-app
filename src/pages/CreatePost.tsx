@@ -3,7 +3,7 @@ import { Button, Card, Col, Form, Row } from 'react-bootstrap';
 import { observer } from 'mobx-react-lite';
 import { useStore } from '../store/Provider';
 
-const CreatePost: React.FC = () => {
+function CreatePost () {
   const store = useStore();
 
   const [title, setTitle] = useState('');

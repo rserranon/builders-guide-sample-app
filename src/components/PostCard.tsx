@@ -4,11 +4,8 @@ import { Post } from '../shared/types';
 import VerifyButton from './VerifyButton';
 import VoteButton from './VoteButton';
 
-interface Props {
-  post: Post;
-}
 
-const PostCard: React.FC<Props> = ({ post }) => {
+function PostCard ({ post } : {post : Post}) {
   return (
     <Card key={post.id} className="my-4">
       <Card.Body>

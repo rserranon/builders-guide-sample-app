@@ -3,7 +3,7 @@ import { Alert, Form, Modal, Spinner } from 'react-bootstrap';
 import { observer } from 'mobx-react-lite';
 import { useStore } from '../store/Provider';
 
-const PayModal: React.FC = () => {
+function PayModal() {
   const store = useStore();
 
   const body = !store.pmtSuccessMsg ? (
